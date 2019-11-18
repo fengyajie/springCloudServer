@@ -2,9 +2,8 @@ package com.example;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-//该注解能激活Eureka中的DiscoveryClient实现，才能实现Controller中对服务信息的输出。
-@EnableDiscoveryClient
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+@EnableEurekaServer
 @SpringBootApplication
 public class ApplicationServer {
 
